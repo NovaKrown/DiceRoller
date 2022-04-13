@@ -1,3 +1,4 @@
+//This space is to build better functions and test Javascript
 let crit = "";
 let light = "";
 let dark = "";
@@ -12,8 +13,7 @@ function d4_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_4 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_4;
+  centerDisplay.innerHTML = roll_4;
 
   rollX = roll_4;
   crit = 4;
@@ -31,8 +31,7 @@ function d6_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_6 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_6;
+  centerDisplay.innerHTML = roll_6;
 
   rollX = roll_6;
   crit = 6;
@@ -50,8 +49,7 @@ function d8_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_8 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_8;
+  centerDisplay.innerHTML = roll_8;
 
   rollX = roll_8;
   crit = 8;
@@ -69,8 +67,7 @@ function d10_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_10 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_10;
+  centerDisplay.innerHTML = roll_10;
 
   rollX = roll_10;
   crit = 10;
@@ -88,8 +85,7 @@ function d12_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_12 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_12;
+  centerDisplay.innerHTML = roll_12;
 
   rollX = roll_12;
   crit = 12;
@@ -107,8 +103,7 @@ function d20_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_20 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_20;
+  centerDisplay.innerHTML = roll_20;
 
   rollX = roll_20;
   crit = 20;
@@ -126,8 +121,7 @@ function d100_roll() {
   const spanOutput = document.createElement("span");
   spanOutput.textContent = roll_100 + ",";
   logBox.prepend(spanOutput);
-  const span = document.getElementById("bigText");
-  span.textContent = roll_100;
+  centerDisplay.innerHTML = roll_100;
 
   rollX = roll_100;
   crit = 100;

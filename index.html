@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js"></script>
+    <!-- <script src="builder.js"></script> -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -14,10 +15,6 @@
     <title>Dice</title>
   </head>
   <body>
-    <!--     <button id="blueButton" onclick="blue()">Blue</button>
-    <button id="redButton" onclick="red()">Red</button>
-    <button id="greenButton" onclick="green()">Green</button>
- -->
     <div class="wrapper">
       <div id="blankNW"></div>
       <div id="d4">
@@ -28,7 +25,7 @@
           height="85%"
           onclick="d4_roll()"
         />
-        1d4
+        <p>1d4</p>
       </div>
       <div id="d6">
         <img
@@ -38,7 +35,7 @@
           height="85%"
           onclick="d6_roll()"
         />
-        1d6
+        <p>1d6</p>
       </div>
       <div id="d8">
         <img
@@ -61,13 +58,12 @@
         />
         1d100
       </div>
-      <div id="center">
-        <p>Roll!</p>
-        <!-- <div class="box-canvas">
-          <div class="ball"></div>
-        </div> -->
+      <div id="centerDisplay1" class="box-canvas">
+        <div id="centerDisplay" class="ball">
+          <span id="bigText">Roll</span>
+        </div>
       </div>
-      <div id="log"></div>
+      <div id="rollLog">Log</div>
       <div id="blankNE"></div>
       <div id="d10">
         <img
@@ -102,25 +98,9 @@
       </div>
       <div id="blankSE"></div>
     </div>
-    <!-- <script>
-      // Get references to DOM elements
-      var btn = document.getElementById("imgViolet");
-      var needle = document.getElementById("imgViolet");
-
-      // Set up click event handler
-      btn.addEventListener("click", start_animation);
-
-      // Storage for the previous angle
-      var lastAngle = "";
-
-      function start_animation() {
-        // Update the total angle needed
-        lastAngle = +lastAngle + +360;
-
-        // Move the needle:
-        needle.style.transform = "rotate(" + lastAngle + "deg)";
-      }
-    </script> -->
-    </div>
+    <script>
+      const logBox = document.getElementById("rollLog");
+      const centerDisplay = document.getElementById("centerDisplay");
+    </script>
   </body>
 </html>

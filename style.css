@@ -93,8 +93,18 @@ p {
     border-bottom: 5px #2a1202 groove;
 }
 
-#center {
-    grid-column: 2;
+#centerDisplay {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+#centerDisplay1 {
+    grid-column: 2/3;
     grid-row: 2/4;
     font-size: 100px;
     display: flex;
@@ -106,7 +116,7 @@ p {
     border-bottom: 5px #2a1202 groove;
 }
 
-#log {
+#rollLog {
     grid-column: 2;
     grid-row: 4/6;
     overflow: auto;
@@ -301,44 +311,36 @@ h1 {
 
 .box-canvas{
     position: relative;
-    margin: auto;
-    display: block;
-    margin-top: 8%;
-    margin-bottom: 8%;
-    width: 200px;
-    height: 600px;
   }
   
   .box-canvas::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
+    width: 375px;
+    height: 375px;
     background: radial-gradient(var(--pink), 20%, transparent);
     border-radius: 50%;
-    top: -10px;
   }
 
 .ball {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    background:radial-gradient(at top right,
-      rgba(156, 238, 255),
-      rgba(141, 89, 225)
-    );
-    border-radius: 50%;
-  }
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 350px;
+  background:radial-gradient(at top right,
+    rgba(156, 238, 255),
+    rgb(89, 137, 225)
+  );
+  border-radius: 50%;
+  opacity: 55%;
+}
   
-  .ball::before {
+.ball::before {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 350px;
+    height: 350px;
     background: radial-gradient(rgba(255,255,255,0.2), 70%, rgba(141, 89, 225, 0.2));
     border-radius: 50%;
   }
@@ -347,11 +349,21 @@ h1 {
   .ball::after {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 15px;
-    height: 40px;
+    top: 31px;
+    left: 71px;
+    width: 60px;
+    height: 140px;
     border-radius: 50%;
-    box-shadow: -5px -3px 0 rgba(156, 238, 255, 0.8);
+    box-shadow: -18px -4px 0 rgba(156, 238, 255, 0.8);
     transform: rotate(40deg);
+  }
+
+  .pop {
+    background-image: radial-gradient(circle, var(--light), var(--dark) 50%);
+    box-shadow: 2px 2px 30px var(--light);
+  }
+
+  #bigText {
+      font-size: 200px;
+      color: #000;
   }
