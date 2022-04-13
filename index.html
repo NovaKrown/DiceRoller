@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Dice</title>
+  </head>
+  <body>
+    <!--     <button id="blueButton" onclick="blue()">Blue</button>
+    <button id="redButton" onclick="red()">Red</button>
+    <button id="greenButton" onclick="green()">Green</button>
+ -->
+    <div class="wrapper">
+      <div id="blankNW"></div>
+      <div id="d4">
+        <img
+          class="die"
+          id="imgYellow"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d4_roll()"
+        />
+        1d4
+      </div>
+      <div id="d6">
+        <img
+          class="die"
+          id="imgOrange"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d6_roll()"
+        />
+        1d6
+      </div>
+      <div id="d8">
+        <img
+          class="die"
+          id="imgRed"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d8_roll()"
+        />
+        1d8
+      </div>
+      <div id="blankSW"></div>
+      <div id="d100">
+        <img
+          class="die"
+          id="imgGreen"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d100_roll()"
+        />
+        1d100
+      </div>
+      <div id="center">
+        <p>Roll!</p>
+        <!-- <div class="box-canvas">
+          <div class="ball"></div>
+        </div> -->
+      </div>
+      <div id="log"></div>
+      <div id="blankNE"></div>
+      <div id="d10">
+        <img
+          class="die"
+          id="imgBlue"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d10_roll()"
+        />
+        1d10
+      </div>
+
+      <div id="d12">
+        <img
+          class="die"
+          id="imgIndigo"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d12_roll()"
+        />
+        1d12
+      </div>
+      <div id="d20">
+        <img
+          class="die"
+          id="imgViolet"
+          src="/assets/Diamond.svg"
+          height="85%"
+          onclick="d20_roll()"
+        />
+        1d20
+      </div>
+      <div id="blankSE"></div>
+    </div>
+    <!-- <script>
+      // Get references to DOM elements
+      var btn = document.getElementById("imgViolet");
+      var needle = document.getElementById("imgViolet");
+
+      // Set up click event handler
+      btn.addEventListener("click", start_animation);
+
+      // Storage for the previous angle
+      var lastAngle = "";
+
+      function start_animation() {
+        // Update the total angle needed
+        lastAngle = +lastAngle + +360;
+
+        // Move the needle:
+        needle.style.transform = "rotate(" + lastAngle + "deg)";
+      }
+    </script> -->
+    </div>
+  </body>
+</html>
