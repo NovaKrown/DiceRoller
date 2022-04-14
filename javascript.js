@@ -13,6 +13,7 @@ function d4_roll() {
   spanOutput.textContent = roll_4 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_4;
 
   rollX = roll_4;
@@ -24,6 +25,7 @@ function d4_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d6_roll() {
@@ -32,6 +34,7 @@ function d6_roll() {
   spanOutput.textContent = roll_6 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_6;
 
   rollX = roll_6;
@@ -43,6 +46,7 @@ function d6_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d8_roll() {
@@ -51,6 +55,7 @@ function d8_roll() {
   spanOutput.textContent = roll_8 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_8;
 
   rollX = roll_8;
@@ -62,6 +67,7 @@ function d8_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d10_roll() {
@@ -70,6 +76,7 @@ function d10_roll() {
   spanOutput.textContent = roll_10 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_10;
 
   rollX = roll_10;
@@ -81,6 +88,7 @@ function d10_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d12_roll() {
@@ -89,6 +97,7 @@ function d12_roll() {
   spanOutput.textContent = roll_12 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_12;
 
   rollX = roll_12;
@@ -100,6 +109,7 @@ function d12_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d20_roll() {
@@ -108,6 +118,7 @@ function d20_roll() {
   spanOutput.textContent = roll_20 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_20;
 
   rollX = roll_20;
@@ -119,6 +130,7 @@ function d20_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function d100_roll() {
@@ -127,6 +139,7 @@ function d100_roll() {
   spanOutput.textContent = roll_100 + ",";
   logBox.prepend(spanOutput);
   const span = document.getElementById("bigText");
+  span.classList.add("zoom");
   span.textContent = roll_100;
 
   rollX = roll_100;
@@ -138,6 +151,7 @@ function d100_roll() {
 
   spin();
   colorPop();
+  setTimeout(removeZoom, 800);
 }
 
 function colorPop() {
@@ -157,6 +171,12 @@ function spin() {
   document.getElementById(color).style.transform =
     "rotate(" + lastAngle + "deg)";
   lastAngle = 1;
+}
+
+function removeZoom() {
+  const span = document.getElementById("bigText");
+  span.classList.remove("zoom");
+  console.log("clear");
 }
 
 const red = "#B31F1B";

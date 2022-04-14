@@ -30,6 +30,7 @@ body {
     background-image: url("/assets/Starry.jpg");
     background-size: cover;
     color: antiquewhite;
+    overflow: hidden;
 }
 
 
@@ -313,14 +314,14 @@ h1 {
     position: relative;
   }
   
-  .box-canvas::before {
+.box-canvas::before {
     content: '';
     position: absolute;
     width: 375px;
     height: 375px;
     background: radial-gradient(var(--pink), 20%, transparent);
     border-radius: 50%;
-  }
+}
 
 .ball {
     position: absolute;
@@ -365,5 +366,21 @@ h1 {
 
   #bigText {
       font-size: 200px;
-      color: #000;
+      color: #363636;
+  }
+
+.zoom {
+    animation: grow 1s 1;
+}
+
+  @-webkit-keyframes grow {
+      0% {
+          transform: scale( 0 );
+      }
+      50% {
+          transform: scale(1.1);
+      }
+      100% {
+          transform: scale(1);
+      }
   }
