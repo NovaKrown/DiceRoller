@@ -23,9 +23,9 @@
           id="imgYellow"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d4_roll()"
+          onclick="d4_roll(), clickCounter()"
         />
-        <p>1d4</p>
+        <p class="dieType">1d4</p>
       </div>
       <div id="d6">
         <img
@@ -33,9 +33,9 @@
           id="imgOrange"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d6_roll()"
+          onclick="d6_roll(), clickCounter()"
         />
-        <p>1d6</p>
+        <p class="dieType">1d6</p>
       </div>
       <div id="d8">
         <img
@@ -43,9 +43,9 @@
           id="imgRed"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d8_roll()"
+          onclick="d8_roll(), clickCounter()"
         />
-        1d8
+        <p class="dieType">1d8</p>
       </div>
       <div id="blankSW"></div>
       <div id="d100">
@@ -54,9 +54,9 @@
           id="imgGreen"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d100_roll()"
+          onclick="d100_roll(), clickCounter()"
         />
-        1d100
+        <p class="dieType">1d100</p>
       </div>
       <div id="centerDisplay1" class="1box-canvas">
         <div id="centerDisplay" class="1ball">
@@ -71,9 +71,9 @@
           id="imgBlue"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d10_roll()"
+          onclick="d10_roll(), clickCounter()"
         />
-        1d10
+        <p class="dieType">1d10</p>
       </div>
 
       <div id="d12">
@@ -82,9 +82,9 @@
           id="imgIndigo"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d12_roll()"
+          onclick="d12_roll(), clickCounter()"
         />
-        1d12
+        <p class="dieType">1d12</p>
       </div>
       <div id="d20">
         <img
@@ -92,11 +92,31 @@
           id="imgViolet"
           src="/assets/Diamond.svg"
           height="85%"
-          onclick="d20_roll()"
+          onclick="d20_roll(), clickCounter()"
         />
-        1d20
+        <p class="dieType">1d20</p>
       </div>
       <div id="blankSE"></div>
+    </div>
+    <!-- PAGE 2 -->
+    <div id="page2" class="wrapper2 hide">
+      <div class="cat" onclick="reset()">
+        <div class="ear ear--left"></div>
+        <div class="ear ear--right"></div>
+        <div class="face">
+          <div class="eye eye--left">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="eye eye--right">
+            <div class="eye-pupil"></div>
+          </div>
+          <div class="muzzle"></div>
+        </div>
+      </div>
+      <div class="clicker">
+        <p>Clicks: <a id="clicks">0</a></p>
+      </div>
+      <div class="footer">Created by: Nicholas Kumar</div>
     </div>
     <script>
       const logBox = document.getElementById("rollLog");
