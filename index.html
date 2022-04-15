@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js"></script>
     <!-- <script src="builder.js"></script> -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <title>Dice</title>
   </head>
   <body>
@@ -22,7 +17,6 @@
           class="die"
           id="imgYellow"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d4_roll(), clickCounter()"
         />
         <p class="dieType">1d4</p>
@@ -32,7 +26,6 @@
           class="die"
           id="imgOrange"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d6_roll(), clickCounter()"
         />
         <p class="dieType">1d6</p>
@@ -42,7 +35,6 @@
           class="die"
           id="imgRed"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d8_roll(), clickCounter()"
         />
         <p class="dieType">1d8</p>
@@ -53,13 +45,12 @@
           class="die"
           id="imgGreen"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d100_roll(), clickCounter()"
         />
         <p class="dieType">1d100</p>
       </div>
-      <div id="centerDisplay1" class="1box-canvas">
-        <div id="centerDisplay" class="1ball">
+      <div id="centerDisplay1">
+        <div id="centerDisplay">
           <span id="bigText">Roll</span>
         </div>
       </div>
@@ -70,7 +61,6 @@
           class="die"
           id="imgBlue"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d10_roll(), clickCounter()"
         />
         <p class="dieType">1d10</p>
@@ -81,7 +71,6 @@
           class="die"
           id="imgIndigo"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d12_roll(), clickCounter()"
         />
         <p class="dieType">1d12</p>
@@ -91,7 +80,6 @@
           class="die"
           id="imgViolet"
           src="/assets/Diamond.svg"
-          height="85%"
           onclick="d20_roll(), clickCounter()"
         />
         <p class="dieType">1d20</p>
