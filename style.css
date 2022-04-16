@@ -275,12 +275,7 @@ span {
       }
   }
 
-:root {
---color-black: #161616;
---color-white: #fff;
-/* height = x
-width = x * 1.13*/
-}
+
 
 .wrapper2 {
     height: 100vh;
@@ -320,11 +315,20 @@ width = x * 1.13*/
     padding-left: 10px;
 }
 
+:root {
+    --color-black: #161616;
+    --color-white: #fff;
+    /* height = x
+    width = x * 1.13*/
+    }
+
 /* Cat */
 .cat {
     position: relative;
-    height: 500px;
-    width: 565px;
+    height: 70vw;
+    max-height: 60vh;
+    width: 80vw;
+    max-width: 70vh;
 }
 .ear {
     position: absolute;
