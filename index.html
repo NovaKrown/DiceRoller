@@ -11,35 +11,6 @@
   </head>
   <body>
     <div class="wrapper">
-      <div id="blankNW"></div>
-      <div id="d4">
-        <img
-          class="die"
-          id="imgYellow"
-          src="assets/Diamond.svg"
-          onclick="d4_roll(), clickCounter()"
-        />
-        <p class="dieType">1d4</p>
-      </div>
-      <div id="d6">
-        <img
-          class="die"
-          id="imgOrange"
-          src="assets/Diamond.svg"
-          onclick="d6_roll(), clickCounter()"
-        />
-        <p class="dieType">1d6</p>
-      </div>
-      <div id="d8">
-        <img
-          class="die"
-          id="imgRed"
-          src="assets/Diamond.svg"
-          onclick="d8_roll(), clickCounter()"
-        />
-        <p class="dieType">1d8</p>
-      </div>
-      <div id="blankSW"></div>
       <div id="d100">
         <img
           class="die"
@@ -49,42 +20,68 @@
         />
         <p class="dieType">1d100</p>
       </div>
-      <div id="centerDisplay1">
+      <div class="grid">
+        <div id="d4">
+          <p class="dieType">1d4</p>
+          <img
+            class="die"
+            id="imgYellow"
+            src="assets/Diamond.svg"
+            onclick="d4_roll(), clickCounter()"
+          />
+        </div>
+        <div id="d6">
+          <p class="dieType">1d6</p>
+          <img
+            class="die"
+            id="imgOrange"
+            src="assets/Diamond.svg"
+            onclick="d6_roll(), clickCounter()"
+          />
+        </div>
+        <div id="d8">
+          <p class="dieType">1d8</p>
+          <img
+            class="die"
+            id="imgRed"
+            src="assets/Diamond.svg"
+            onclick="d8_roll(), clickCounter()"
+          />
+        </div>
+
         <div id="centerDisplay">
-          <span id="bigText">Roll</span>
+          <span id="bigText"></span>
+        </div>
+        <div id="d10">
+          <img
+            class="die"
+            id="imgBlue"
+            src="assets/Diamond.svg"
+            onclick="d10_roll(), clickCounter()"
+          />
+          <p class="dieType">1d10</p>
+        </div>
+
+        <div id="d12">
+          <img
+            class="die"
+            id="imgIndigo"
+            src="assets/Diamond.svg"
+            onclick="d12_roll(), clickCounter()"
+          />
+          <p class="dieType">1d12</p>
+        </div>
+        <div id="d20">
+          <img
+            class="die"
+            id="imgViolet"
+            src="assets/Diamond.svg"
+            onclick="d20_roll(), clickCounter()"
+          />
+          <p class="dieType">1d20</p>
         </div>
       </div>
       <div id="rollLog">Log</div>
-      <div id="blankNE"></div>
-      <div id="d10">
-        <img
-          class="die"
-          id="imgBlue"
-          src="assets/Diamond.svg"
-          onclick="d10_roll(), clickCounter()"
-        />
-        <p class="dieType">1d10</p>
-      </div>
-
-      <div id="d12">
-        <img
-          class="die"
-          id="imgIndigo"
-          src="assets/Diamond.svg"
-          onclick="d12_roll(), clickCounter()"
-        />
-        <p class="dieType">1d12</p>
-      </div>
-      <div id="d20">
-        <img
-          class="die"
-          id="imgViolet"
-          src="assets/Diamond.svg"
-          onclick="d20_roll(), clickCounter()"
-        />
-        <p class="dieType">1d20</p>
-      </div>
-      <div id="blankSE"></div>
     </div>
     <!-- PAGE 2 -->
     <div id="page2" class="wrapper2 hide">

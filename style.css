@@ -41,30 +41,32 @@ p {
 }
 
 .wrapper {
-    display: grid;
-    grid-template: 20% 20% 20% 20% 20%/ 25% 50% 25%;
+
     height: 100vh;
 }
 
-#blankNW {
-    grid-column: 1;
-    grid-row: 1;
+.grid {
+    display: grid;
+    grid-template: 33% 33% 33%/ 40% 20% 40%;
+    height: 60vh;
 }
+
+
 
 #d4 {
     grid-column: 1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 }
 
 #d6 {
     grid-column: 1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 
@@ -72,91 +74,67 @@ p {
 
 #d8 {
     grid-column: 1;
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 }
 
-#blankSW {
-    grid-column: 1;
-    grid-row: 5/6;
-}
+
 
 #d100 {
-    grid-column: 2/3;
-    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px #2a1202 solid;
-    border-right: 2px #2a1202 solid;
-    border-bottom: 2px #2a1202 solid;
-}
+    border: 2px #2a1202 solid;
+    height: 20vh;
+    }
 
 #centerDisplay {
     grid-column: 2/3;
-    grid-row: 2/4;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: antiquewhite;
-}
+    grid-row: 1/4;
 
-#centerDisplay1 {
-    grid-column: 2/3;
-    grid-row: 2/4;
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: antiquewhite;
-    border-left: 2px #2a1202 solid;
-    border-right: 2px #2a1202 solid;
-    border-bottom: 2px #2a1202 solid;
 }
 
 #rollLog {
-    grid-column: 2;
-    grid-row: 4/6;
     overflow: auto;
     padding: 10px;
-    border-left: 2px #2a1202 solid;
-    border-right: 2px #2a1202 solid;
-    border-bottom: 2px #2a1202 solid;
+    border: 2px #2a1202 solid;
     color: antiquewhite;
+    height: 20vh;
 }
 
-#blankNE {
-    grid-column: 3;
-    grid-row: 1;
-}
+
 
 #d10 {
     grid-column: 3;
-    grid-row: 2/3;
+    grid-row: 1/2;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 }
 
 #d12 {
     grid-column: 3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 }
 
 #d20 {
     grid-column: 3;
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px #2a1202 solid;
 }
@@ -167,8 +145,8 @@ p {
 }
 
 .dieType {
-    font-size: 50px;
-    margin-left: 20px;
+    font-size: 10vw;
+    margin-left: 5px;
 }
 
 span {
@@ -181,7 +159,8 @@ span {
 
 
 .die {
-    height: 85%;
+    width: 15vw;
+    max-width: 18vh;
 }
 
 
@@ -276,7 +255,7 @@ span {
   }
 
   #bigText {
-      font-size: 300px;
+      font-size: 25vw;
       color: antiquewhite;
   }
 
