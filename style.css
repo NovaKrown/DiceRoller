@@ -59,7 +59,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 }
 
 #d6 {
@@ -68,7 +67,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 
 }
 
@@ -78,23 +76,21 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 }
 
 
 
 #d100 {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 2px #2a1202 solid;
-    height: 20vh;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: end;
     }
 
 #centerDisplay {
     grid-column: 2/3;
     grid-row: 1/4;
-
     font-size: 100px;
     display: flex;
     justify-content: center;
@@ -103,14 +99,21 @@ p {
 }
 
 #rollLog {
-    overflow: auto;
+    overflow: hidden;
     padding: 10px;
-    border: 2px #2a1202 solid;
     color: antiquewhite;
-    height: 20vh;
+    height: 15vh;
 }
 
+@media (orientation: portrait) {
+    #d100 {
+      height: 20vh;
+    }
 
+    #rollLog {
+        height: 20vh;
+    }
+  }
 
 #d10 {
     grid-column: 3;
@@ -118,7 +121,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 }
 
 #d12 {
@@ -127,7 +129,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 }
 
 #d20 {
@@ -136,7 +137,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px #2a1202 solid;
 }
 
 #blankSE {
@@ -145,7 +145,7 @@ p {
 }
 
 .dieType {
-    font-size: 10vw;
+    /* font-size: 16px; */
     margin-left: 5px;
 }
 
