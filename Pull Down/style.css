@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    font-size: larger;
+}
+
+.wrapperB {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #363636;
+}
+
+.chooseB {
+    background-color: #242424;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.flexB {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.blockB {
+    min-width: 200px;
+}
+
+
+
+#zoomB {
+    color: #000;
+    font-size: 200px;
+    border: 2px #000 solid;
+}
+
+select {
+    background: #242424;
+}
+
+option {
+    background-color: #242424;
+}
+
+button {
+    background-color: #242424;
+}

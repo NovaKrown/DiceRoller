@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="pageB.js"></script>
+  </head>
+  <body>
+    <div class="wrapperB">
+      <div class="chooseB">
+        <div class="blockB">
+          <span>Dice</span>
+          <select name="numberOfDie" id="numberOfDie">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="flexB">
+        <div class="blockB">
+          <select id="inputMultiply" onchange="select1()">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>d</span>
+          <select id="inputDieType" onchange="select2()">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="20">20</option>
+            <option value="100">100</option>
+          </select>
+          <button id="rollB" onclick="rollB()">Roll</button>
+          <div id="zoomB"></div>
+          <div>
+            <p id="outputB">Result</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
